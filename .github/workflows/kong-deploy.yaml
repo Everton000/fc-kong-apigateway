@@ -32,7 +32,7 @@ jobs:
           scp -o StrictHostKeyChecking=no -r kong.yaml ec2-user@${{ secrets.EC2_PUBLIC_IP }}:/home/ec2-user/kong.yaml
         
       - name: Restart
-        uses: appleboy/ssh-action2v1
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.EC2_PUBLIC_IP }}
           username: ec2-user
