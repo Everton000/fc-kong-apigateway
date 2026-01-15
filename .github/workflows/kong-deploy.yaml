@@ -3,7 +3,7 @@ name: Deploy Kong DB-less Config to EC2
 on:
   push:
     paths:
-      - ../kong.yaml
+      - ./kong.yaml
 
 jobs:
   kong-ci-cd:
