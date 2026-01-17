@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - kong.yaml
+      - ".github/workflows/kong-deploy.yaml"
 
 jobs:
   kong-ci-cd:
